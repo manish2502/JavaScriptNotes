@@ -97,9 +97,14 @@ console.table(patientdetails)
 // Accessing value
 console.log("PAtient name:",patientdetails.name)
 console.log("place:",patientdetails["place"])
+console.log("Patient mail is:",patientdetails.contact.mail)
 
 //changing value
 patientdetails.gender = "Female"
 console.log("Updated patient details:",patientdetails)
 
 //Note: if key is already existed then value will be over written, or else will be inserte das new property
+
+//Deleting value
+delete patientdetails.height
+console.log("patient details after deleting",patientdetails)
